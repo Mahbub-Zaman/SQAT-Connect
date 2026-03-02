@@ -6,27 +6,37 @@ import { Button } from "@/components/ui/button";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = React.useState<"light" | "dark">("light");
+  const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    const initialTheme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    
+    setMounted(true);
+
+    const savedTheme = localStorage.getItem("theme") as
+      | "light"
+      | "dark"
+      | null;
+
+    const initialTheme =
+      savedTheme ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+
     setTheme(initialTheme);
+
     if (initialTheme === "dark") {
       document.documentElement.classList.add("dark");
     }
   }, []);
 
+  if (!mounted) return null; // prevents hydration mismatch
+
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-    
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
   return (
@@ -34,11 +44,40 @@ export default function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="rounded-full w-10 h-10 transition-all hover:bg-accent/10"
       aria-label="Toggle theme"
+      className="
+        relative w-10 h-10 rounded-full
+        border border-border/50
+        bg-background/90
+        backdrop-blur-md
+        shadow-sm
+        transition-all duration-300
+        hover:shadow-md
+        hover:scale-105
+        active:scale-95
+        hover:bg-accent/10
+      "
     >
-      <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-orange-500" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-blue-400" />
+      {/* Sun Icon */}
+      <Sun
+        className="
+          absolute h-5 w-5
+          text-orange-500
+          transition-all duration-500
+          rotate-0 scale-100
+          dark:-rotate-90 dark:scale-0
+        "
+      />
+      {/* Moon Icon */}
+      <Moon
+        className="
+          absolute h-5 w-5
+          text-blue-400
+          transition-all duration-500
+          rotate-90 scale-0
+          dark:rotate-0 dark:scale-100
+        "
+      />
     </Button>
   );
 }

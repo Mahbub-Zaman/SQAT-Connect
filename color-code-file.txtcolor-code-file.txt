@@ -10,8 +10,7 @@
     --card-foreground: 260 40% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 260 40% 10%;
-    --primary: 220 70% 40%;
-    /*--primary: 262 47% 32%;  Deep Purple #4a3a63 */
+    --primary: 262 47% 32%; /* Deep Purple #4a3a63 */
     --primary-foreground: 210 20% 98%;
     --secondary: 260 20% 90%;
     --secondary-foreground: 262 47% 32%;
@@ -39,7 +38,7 @@
     --secondary-foreground: 262 60% 60%;
     --muted: 260 40% 15%;
     --muted-foreground: 260 20% 70%;
-    --accent: 280 81.5% 46.1%;
+    --accent: 190 80% 50%;
     --accent-foreground: 260 70% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 260 20% 95%;

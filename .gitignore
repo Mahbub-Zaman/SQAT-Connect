@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# Color Code File
+color-code-file.txt
+
 # testing
 /coverage
 

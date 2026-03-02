@@ -8,21 +8,10 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="font-headline font-bold text-lg text-primary">SQAT CONNECT</h3>
+            <h3 className="font-headline font-bold text-lg text-primary">SQAT Club</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Empowering the next generation of software developers through collaboration, learning, and innovation.
+              SQAT ( Software Quality Assurance & Testing ) <br /> Empowers the next generation of QA engineers and IT professionals through quality, collaboration, and continuous learning.
             </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </Link>
-            </div>
           </div>
 
           <div>
@@ -50,13 +39,24 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">University Campus, Block B, Room 402</span>
+                <span className="text-muted-foreground">Will be available soon</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <span className="text-muted-foreground">contact@sqat.edu</span>
+                <span className="text-muted-foreground">sqat@diu.edu.bd</span>
               </li>
             </ul>
+            <div className="mt-3 flex space-x-4">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Github className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
