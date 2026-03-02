@@ -1,0 +1,83 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Software developers working together on a project",
+      "imageUrl": "https://picsum.photos/seed/sqat-hero/1200/600",
+      "imageHint": "coding collaboration"
+    },
+    {
+      "id": "event-1",
+      "description": "Web Development Workshop",
+      "imageUrl": "https://picsum.photos/seed/sqat-event1/600/400",
+      "imageHint": "workshop coding"
+    },
+    {
+      "id": "event-2",
+      "description": "Annual Hackathon 2024",
+      "imageUrl": "https://picsum.photos/seed/sqat-event2/600/400",
+      "imageHint": "hackathon competition"
+    },
+    {
+      "id": "team-president",
+      "description": "Club President Portrait",
+      "imageUrl": "https://picsum.photos/seed/sqat-pres/300/300",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-vp",
+      "description": "Club Vice President Portrait",
+      "imageUrl": "https://picsum.photos/seed/sqat-vp/300/300",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-gs",
+      "description": "General Secretary Portrait",
+      "imageUrl": "https://picsum.photos/seed/sqat-gs/300/300",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-founder-1",
+      "description": "Founder Portrait 1",
+      "imageUrl": "https://picsum.photos/seed/sqat-f1/300/300",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "team-founder-2",
+      "description": "Founder Portrait 2",
+      "imageUrl": "https://picsum.photos/seed/sqat-f2/300/300",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "team-advisor-1",
+      "description": "Advisor Portrait",
+      "imageUrl": "https://picsum.photos/seed/sqat-adv1/300/300",
+      "imageHint": "academic portrait"
+    },
+    {
+      "id": "team-mentor-1",
+      "description": "Mentor Portrait",
+      "imageUrl": "https://picsum.photos/seed/sqat-men1/300/300",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Students presenting their project",
+      "imageUrl": "https://picsum.photos/seed/sqat-gal1/800/600",
+      "imageHint": "student presentation"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Networking session at seminar",
+      "imageUrl": "https://picsum.photos/seed/sqat-gal2/800/600",
+      "imageHint": "networking seminar"
+    },
+    {
+      "id": "achievement-1",
+      "description": "Regional Coding Contest Trophy",
+      "imageUrl": "https://picsum.photos/seed/sqat-ach1/400/300",
+      "imageHint": "award trophy"
+    }
+  ]
+}
