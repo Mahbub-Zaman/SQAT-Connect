@@ -41,6 +41,10 @@ export default {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
+        shada: {
+          DEFAULT: 'hsl(var(--shada))',
+          foreground: 'hsl(var(--shada-foreground))',
+        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
