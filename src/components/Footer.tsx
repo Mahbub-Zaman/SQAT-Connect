@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} SQAT Club. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SQAT Club. All rights reserved. | Designed by <span className="text-primary hover:text-primary/90 font-semibold"><a href="https://mahbub-zaman.vercel.app/">Mahbub Zaman</a></span></p>
         </div>
       </div>
     </footer>
