@@ -58,7 +58,7 @@ export default function EventsPage() {
 
       {/* Upcoming Events */}
       <section className="space-y-8">
-        <h2 className="text-2xl font-headline font-bold">Upcoming Events</h2>
+        <h2 className="text-2xl text-primary font-headline font-bold">Upcoming Events</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {upcomingEvents.map((event, i) => {
             const img = PlaceHolderImages.find(p => p.id === event.imgId);
@@ -77,7 +77,7 @@ export default function EventsPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   )}
-                  <Badge className="absolute top-2 left-2 bg-primary text-white text-[10px] px-2 py-0">
+                  <Badge className="absolute top-2 left-2 bg-primary text-white text-[12px] px-2 py-0">
                     {event.type}
                   </Badge>
                 </div>
@@ -128,7 +128,7 @@ export default function EventsPage() {
 
       {/* Past Highlights */}
       <section className="space-y-10">
-        <h2 className="text-2xl font-headline font-bold">Past Highlights</h2>
+        <h2 className="text-2xl text-primary font-headline font-bold">Past Highlights</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {pastEvents.map((event, i) => {
             const img = PlaceHolderImages.find(p => p.id === event.imgId);
