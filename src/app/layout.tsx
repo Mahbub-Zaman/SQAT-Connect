@@ -7,7 +7,7 @@ import GoToTop from '@/components/GoToTop';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'SQAT Connect | Empowering Future Developers',
+  title: 'SQAT - Software Quality Assurance & Testing Club | Empowering Future Developers',
   description: 'Official website of SQAT Club - Empowering the next generation of software developers.',
 };
 
